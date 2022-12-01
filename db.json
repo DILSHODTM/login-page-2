@@ -1,0 +1,22 @@
+{
+  "task": [
+    {
+      "id": 1,
+      "title": "KIMAKAN",
+      "desc": "salomlar",
+      "date": "2022-11-25"
+    },
+    {
+      "id": 2,
+      "title": "NIMA",
+      "desc": "salomlar",
+      "date": "2022-11-25"
+    },
+    {
+      "title": "dilshod",
+      "desc": "egamnazarov",
+      "date": "2022-11-17",
+      "id": 3
+    }
+  ]
+}

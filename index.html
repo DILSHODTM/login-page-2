@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="bg-success">
+      <div class="container d-flex justify-content-between align-items-center" >
+        <h3 class="p-3">TASK MANAGER APP</h3>
+        <div class=" d-flex gap-3">
+          <p class=" p-2 border rounded bg-warning" id="username"></p>
+        <button class="btn btn-danger" id="logout" style="height: 40px ;">-> Logout</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="main">
+        <div class="container">
+          <div class="row my-4">
+            <div class="col-md-4 p-3 shadow">
+              <h3 class="text-danger text-center">Add new task</h3>
+              <form action="#" id="add">
+                <label for="taskTitle" class="w-100 my-3">
+                  <input
+                    type="text"
+                    class="form-control p-3"
+                    placeholder="Enter task title"
+                    id="taskTitle"
+                    required>
+                </label>
+                <label for="taskDesc" class="w-100 my-3">
+                  <input
+                    type="text"
+                    class="form-control p-3"
+                    placeholder="Enter task description"
+                    id="taskDesc"
+                  required>
+                </label>
+
+                <label for="taskDate" class="w-100 my-3">
+                  <input type="date" class="form-control p-3" id="taskDate" required>
+                </label>
+
+                <button type="submit" class="btn btn-success py-3 my-3 w-100">
+                  ADD TASK
+                </button>
+              </form>
+            </div>
+            <div class="col-md-7 p-3 shadow">
+              <h3 class="text-danger text-center">Tasks lists</h3>
+              <table class="table table-striped table-hover table-border mt-4">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Task title</th>
+                    <th>Task description</th>
+                    <th>Task deadline</th>
+                    <th>Edit</th>
+                    <th>Remove</th>
+                  </tr>
+                  
+                </thead>
+<tbody id="data">
+    
+    
+</tbody>
+
+
+
+
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="./scripts/utilits.js"></script>
+  <script src="./scripts/app.js"></script>
+</html>
